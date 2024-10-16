@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { FC, useState, useEffect } from 'react';
 import TrofeyCard from '../TrofeyCard';
 import { TrofeyCardProps } from '@/types/interfaces';
