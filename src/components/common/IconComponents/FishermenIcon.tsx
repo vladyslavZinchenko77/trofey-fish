@@ -2,9 +2,10 @@ import React from 'react';
 
 interface IconProps {
   size?: number;
+  className?: string;
 }
 
-const FishermenIcon: React.FC<IconProps> = ({ size = 24 }) => {
+const FishermenIcon: React.FC<IconProps> = ({ size = 24, className = '' }) => {
   return (
     <svg
       width={size}
@@ -12,7 +13,7 @@ const FishermenIcon: React.FC<IconProps> = ({ size = 24 }) => {
       viewBox="0 0 48 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="stroke-current text-[#181818] hover:text-[#0275B1] transition-colors duration-300"
+      className={`stroke-current ${className}`}
     >
       <path
         d="M20.9871 34.5522L12 29L39 29C40.6569 29 42 30.3431 42 32C42 33.6569 40.6569 35 39 35L22.5639 35C22.0069 35 21.461 34.845 20.9871 34.5522Z"
@@ -49,6 +50,3 @@ const FishermenIcon: React.FC<IconProps> = ({ size = 24 }) => {
 };
 
 export default FishermenIcon;
-
-
-

@@ -5,12 +5,12 @@ import Header from '@/components/UI/Header';
 
 const HomePage: FC = () => {
   return (
-    <div>
+    <main>
       <Header />
       <div>
         <TrofeyCardList />
       </div>
-    </div>
+    </main>
   );
 };
 
