@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const FishingLocationsPage = () => {
-  return (
-    <div>FishingLocations</div>
-  )
-}
+  return <div>FishingLocations</div>;
+};
 
-export default FishingLocationsPage
+export default FishingLocationsPage;

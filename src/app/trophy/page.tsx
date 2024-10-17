@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { FC } from 'react';
+import Header from '@/components/UI/Header';
+import TrofeyCardList from '@/components/common/TrofeyCardList';
 
-const TrophyPage = () => {
+const TrophyPage: FC = () => {
   return (
-    <div>TrophyPage</div>
-  )
-}
+    <main>
+      <Header />
+      <div>
+        <TrofeyCardList />
+      </div>
+    </main>
+  );
+};
 
-export default TrophyPage
+export default TrophyPage;

@@ -1,3 +1,4 @@
+'use client';
 import React, { FC } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -41,7 +42,7 @@ const Header: FC = () => {
         <Link href={'/'}>
           <div className="flex items-center">
             <Avatar />
-            <p>D. Kargaev</p>
+            <p className="ml-[8px]">D. Kargaev</p>
           </div>
         </Link>
       </nav>

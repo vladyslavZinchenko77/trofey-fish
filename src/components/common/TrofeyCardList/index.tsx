@@ -25,9 +25,9 @@ const TrofeyCardList: FC = () => {
   }, [posts]);
 
   return (
-    <div>
-      <h2>Трофеї наших учасників:</h2>
-      <div>
+    <div className="m-[24px]">
+      <h2>Trophies of our users:</h2>
+      <div className="m-[24px] grid grid-cols-3 gap-[24px]">
         {posts.map((post) => (
           <TrofeyCard
             key={post.id}
