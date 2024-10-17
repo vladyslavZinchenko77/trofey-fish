@@ -1,9 +1,9 @@
 import React from 'react'
 
-const FishingLocations = () => {
+const FishingLocationsPage = () => {
   return (
     <div>FishingLocations</div>
   )
 }
 
-export default FishingLocations
+export default FishingLocationsPage
