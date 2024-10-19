@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { TrofeyCardProps } from '@/types/interfaces';
 import Avatar from '../Avatar';
 
-
 const TrofeyCard: FC<TrofeyCardProps> = ({
   fishermanName,
   fishType,
@@ -27,7 +26,10 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
         />
       </div>
       <div className="flex justify-between items-center">
-        <button type="button" className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+        <button
+          type="button"
+          className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+        >
           Like
         </button>
         <p className="text-lg font-medium">likes: {likes}</p>
