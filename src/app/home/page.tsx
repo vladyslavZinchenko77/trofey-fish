@@ -2,6 +2,7 @@
 import React, { FC } from 'react';
 import TrofeyCardList from '@/components/common/TrofeyCardList';
 import Header from '@/components/UI/Header';
+import Footer from '@/components/UI/Footer';
 
 const HomePage: FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage: FC = () => {
           <TrofeyCardList />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

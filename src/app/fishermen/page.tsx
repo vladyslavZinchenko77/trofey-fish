@@ -1,7 +1,17 @@
-import React from 'react';
+import { FC } from 'react';
+import Header from '@/components/UI/Header';
+import Footer from '@/components/UI/Footer';
 
-const FishermenPage = () => {
-  return <div>FishermenPage</div>;
+const FishermenPage: FC = () => {
+  return (
+    <>
+      <Header />
+      <main>
+        <div>FishermenPage</div>
+      </main>
+      <Footer />
+    </>
+  );
 };
 
 export default FishermenPage;

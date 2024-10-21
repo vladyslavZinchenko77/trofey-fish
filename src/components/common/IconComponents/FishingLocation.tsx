@@ -1,14 +1,11 @@
-import {FC} from 'react';
+import { FC } from 'react';
 
 interface IconProps {
   size?: number;
   className?: string;
 }
 
-const FishingLocation: FC<IconProps> = ({
-  size = 24,
-  className = '',
-}) => {
+const FishingLocation: FC<IconProps> = ({ size = 24, className = '' }) => {
   return (
     <svg
       width={size}
