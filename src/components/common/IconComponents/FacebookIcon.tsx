@@ -5,15 +5,15 @@ import React, { useState } from 'react';
 interface IconProps {
   size?: number;
   className?: string;
-  color?: string; 
+  color?: string;
   hoverColor?: string;
 }
 
 const FacebookIcon: React.FC<IconProps> = ({
   size = 24,
   className = '',
-  color = '#0F0F0F', 
-  hoverColor = 'blue', 
+  color = '#0F0F0F',
+  hoverColor = 'blue',
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 

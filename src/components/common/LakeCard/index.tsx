@@ -1,36 +1,26 @@
-'use client'
+'use client';
 import React, { FC, useState } from 'react';
 import WebsiteIcon from '../IconComponents/WebsiteIcon';
 import InstagramIcon from '../IconComponents/InstagramIcon';
-import FacabookIcon from '../IconComponents/FacebookIcon';
+import FacebookIcon from '../IconComponents/FacebookIcon';
 import YoutubeIcon from '../IconComponents/YoutubeIcon';
-
-interface LakeCardProps {
-  id: number;
-  lakeName: string;
-  instagramLink: string;
-  facebookLink: string;
-  youtubeLink: string;
-  websiteLink: string;
-  coverImg: string;
-  lakeAddress: string
-}
+import { LakeCardProps } from '@/types/interfaces';
 
 const LakeCard: FC<LakeCardProps> = ({
   id,
-  lakeName ,
+  lakeName,
   instagramLink,
   youtubeLink,
   websiteLink,
-  coverImg ,
-  lakeAddress
+  facebookLink,
+  coverImg,
+  lakeAddress,
 }) => {
-  const [onMouse, setOnMouse] = useState(true);
-  
+  const [onMouse, setOnMouse] = useState<boolean>(true);
+
   return (
-   
-    <div className='flex flex-col w-[400px] relative'>
-      <div className='flex justify-center'>
+    <div className="flex flex-col w-[400px] relative">
+      <div className="flex justify-center">
         <h2>{lakeName}</h2>
       </div>
       <div
@@ -46,22 +36,31 @@ const LakeCard: FC<LakeCardProps> = ({
               : 'flex absolute right-[10px] bottom-[10px] opacity-[1] transition-[2000ms]'
           }
         >
-          <a className='ml-[8px]' target='_blank' href={websiteLink}>
-            <WebsiteIcon color='#ffffff' hoverColor='#0275B1' />
-          </a>
-          <a className='ml-[8px]' href={instagramLink}>
-            <InstagramIcon color='#ffffff' hoverColor='#0275B1' />
-          </a>
-          <a
-            className='ml-[8px]'
-            href='https://www.facebook.com/profile.php?id=100001293125330'
-            target='_blank'
-          >
-            <FacabookIcon color='#ffffff' hoverColor='#0275B1' />
-          </a>
-          <a className='ml-[8px]' href={youtubeLink} target='_blank'>
-            <YoutubeIcon color='white' hoverColor='#0275B1' />
-          </a>
+          {websiteLink.trim() !== '' && (
+            <a className="ml-[8px]" target="_blank" href={websiteLink}>
+              <WebsiteIcon color="#ffffff" hoverColor="#0275B1" />
+            </a>
+          )}
+
+          {instagramLink.trim() !== '' && (
+            <a className="ml-[8px]" href={instagramLink}>
+              <InstagramIcon color="#ffffff" hoverColor="#0275B1" />
+            </a>
+          )}
+          {facebookLink.trim() !== '' && (
+            <a
+              className="ml-[8px]"
+              href="https://www.facebook.com/profile.php?id=100001293125330"
+              target="_blank"
+            >
+              <FacebookIcon color="#ffffff" hoverColor="#0275B1" />
+            </a>
+          )}
+          {youtubeLink.trim() !== '' && (
+            <a className="ml-[8px]" href={youtubeLink} target="_blank">
+              <YoutubeIcon color="white" hoverColor="#0275B1" />
+            </a>
+          )}
         </div>
       </div>
       <p
@@ -71,9 +70,7 @@ const LakeCard: FC<LakeCardProps> = ({
       >
         {lakeAddress}
       </p>
-    
     </div>
-    
   );
 };
 

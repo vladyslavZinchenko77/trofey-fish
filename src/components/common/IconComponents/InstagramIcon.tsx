@@ -4,15 +4,15 @@ import React, { useState } from 'react';
 interface IconProps {
   size?: number;
   className?: string;
-  color?: string; 
-  hoverColor?: string; 
+  color?: string;
+  hoverColor?: string;
 }
 
 const InstagramIcon: React.FC<IconProps> = ({
   size = 24,
   className = '',
-  color = '#0F0F0F', 
-  hoverColor = 'purple', 
+  color = '#0F0F0F',
+  hoverColor = 'purple',
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
