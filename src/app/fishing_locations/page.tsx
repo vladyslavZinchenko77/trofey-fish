@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import LakeCardList from '@/components/common/LakeCardList';
 import Header from '@/components/UI/Header';
+import Footer from '@/components/UI/Footer';
 
 const FishingLocationsPage: FC = () => {
   return (
@@ -11,6 +12,7 @@ const FishingLocationsPage: FC = () => {
           <LakeCardList />
         </div>
       </main>
+      <Footer />
     </>
   );
 };
