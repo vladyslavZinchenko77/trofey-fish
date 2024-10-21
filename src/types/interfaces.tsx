@@ -11,3 +11,14 @@ export interface TrofeyCardProps {
   feed?: string;
   likes?: number;
 }
+
+export interface LakeCardProps {
+  id: number;
+  lakeName: string;
+  instagramLink: string;
+  facebookLink: string;
+  youtubeLink: string;
+  websiteLink: string;
+  coverImg: string;
+  lakeAddress: string;
+}

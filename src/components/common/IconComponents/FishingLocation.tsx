@@ -1,11 +1,11 @@
-import React from 'react';
+import {FC} from 'react';
 
 interface IconProps {
   size?: number;
   className?: string;
 }
 
-const FishingLocation: React.FC<IconProps> = ({
+const FishingLocation: FC<IconProps> = ({
   size = 24,
   className = '',
 }) => {

@@ -8,7 +8,6 @@ const FishingLocationsPage: FC = () => {
       <Header />
       <main>
         <div>
-          <div>FishingLocations: </div>
           <LakeCardList />
         </div>
       </main>
