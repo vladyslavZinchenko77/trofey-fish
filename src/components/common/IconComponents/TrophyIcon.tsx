@@ -1,11 +1,11 @@
-import React from 'react';
+import {FC} from 'react';
 
 interface IconProps {
   size?: number;
   className?: string;
 }
 
-const TrophyIcon: React.FC<IconProps> = ({ size = 24, className = '' }) => {
+const TrophyIcon: FC<IconProps> = ({ size = 24, className = '' }) => {
   return (
     <svg
       width={size}

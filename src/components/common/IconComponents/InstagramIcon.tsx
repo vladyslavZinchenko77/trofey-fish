@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import {FC, useState } from 'react';
 
 interface IconProps {
   size?: number;
@@ -8,7 +8,7 @@ interface IconProps {
   hoverColor?: string;
 }
 
-const InstagramIcon: React.FC<IconProps> = ({
+const InstagramIcon: FC<IconProps> = ({
   size = 24,
   className = '',
   color = '#0F0F0F',
