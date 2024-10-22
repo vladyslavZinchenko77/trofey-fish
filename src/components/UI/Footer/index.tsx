@@ -17,10 +17,10 @@ const Footer: FC = () => {
         <p>© Всі права захищені 2024</p>
         <div className="flex">
           <a className="ml-[8px]" href="" target="_blank">
-            <InstagramIcon hoverColor='white' />
+            <InstagramIcon hoverColor="white" />
           </a>
           <a className="ml-[8px]" href="" target="_blank">
-            <FacebookIcon hoverColor='white' />
+            <FacebookIcon hoverColor="white" />
           </a>
         </div>
         <div className="flex flex-col">
