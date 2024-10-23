@@ -18,6 +18,8 @@ export const paths = {
     root: ROOTS.HOME,
     trophy: `${ROOTS.HOME}trophy`,
     fishermen: `${ROOTS.HOME}fishermen`,
+    fishingBloggers: `${ROOTS.HOME}fishing_bloggers`,
+    typesOfFish: `${ROOTS.HOME}types_of_fish`,
     fishingLocations: `${ROOTS.HOME}fishing_locations`,
   },
 };
