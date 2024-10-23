@@ -51,26 +51,29 @@ export const lakes: LakeCardProps[] = [
     youtubeLink: '',
     websiteLink: 'https://soltanovka.com/',
     coverImg: '/img/lakes/soltanovka.jpg',
-    lakeAddress: "Київська область, с. Хлепча",
+    lakeAddress: 'Київська область, с. Хлепча',
   },
   {
     id: 6,
     lakeName: 'Рибальський клуб "Солтанівка"',
-    instagramLink: 'https://www.instagram.com/vovkove_ozero?igsh=MWFpdGU5a2MzNTdwZg==',
+    instagramLink:
+      'https://www.instagram.com/vovkove_ozero?igsh=MWFpdGU5a2MzNTdwZg==',
     facebookLink: 'https://www.facebook.com/vovkovelake',
     youtubeLink: '',
     websiteLink: 'https://vovkoveozero.com.ua/contact-us/',
     coverImg: '/img/lakes/vovkove.jpg',
-    lakeAddress: "Шосе Київ-Харків до Баришівки, далі 8 км у напрямку с.Паришків.",
+    lakeAddress:
+      'Шосе Київ-Харків до Баришівки, далі 8 км у напрямку с.Паришків.',
   },
   {
     id: 7,
     lakeName: 'Озеро "КарТар"',
     instagramLink: 'https://www.instagram.com/ozero_kartar',
     facebookLink: 'https://www.facebook.com/OzeroKarTar/',
-    youtubeLink: 'https://www.youtube.com/c/%D0%9E%D0%B7%D0%B5%D1%80%D0%BE%D0%9A%D0%B0%D1%80%D0%A2%D0%B0%D1%80',
+    youtubeLink:
+      'https://www.youtube.com/c/%D0%9E%D0%B7%D0%B5%D1%80%D0%BE%D0%9A%D0%B0%D1%80%D0%A2%D0%B0%D1%80',
     websiteLink: 'https://kartar.com.ua/',
     coverImg: '/img/lakes/kartar.jpg',
-    lakeAddress: "c. Тарган, Володарський р-н, Київська обл.",
+    lakeAddress: 'c. Тарган, Володарський р-н, Київська обл.',
   },
 ];

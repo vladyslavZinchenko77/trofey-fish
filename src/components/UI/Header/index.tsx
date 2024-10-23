@@ -9,14 +9,18 @@ import { paths } from '@/routes/path';
 import TrophyIcon from '@/components/common/IconComponents/TrophyIcon';
 import FishermenIcon from '@/components/common/IconComponents/FishermenIcon';
 import FishingLocation from '@/components/common/IconComponents/FishingLocation';
+import BlogIcon from '@/components/common/IconComponents/BlogIcon';
+import FishIcon from '@/components/common/IconComponents/FishIcon';
 
 const navItems = [
-  { href: paths.home.trophy, icon: TrophyIcon, text: 'Trophy' },
-  { href: paths.home.fishermen, icon: FishermenIcon, text: 'Fishermen' },
+  { href: paths.home.trophy, icon: TrophyIcon, text: 'Трофеї' },
+  { href: paths.home.fishermen, icon: FishermenIcon, text: 'Рибаки' },
+  { href: paths.home.fishingBloggers, icon: BlogIcon, text: 'Блогери Рибаки' },
+  { href: paths.home.typesOfFish, icon: FishIcon, text: 'Види Риб' },
   {
     href: paths.home.fishingLocations,
     icon: FishingLocation,
-    text: 'Fishing locations',
+    text: 'Локації для рибалки',
   },
 ];
 

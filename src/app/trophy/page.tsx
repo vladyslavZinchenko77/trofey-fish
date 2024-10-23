@@ -6,8 +6,8 @@ import Footer from '@/components/UI/Footer';
 const TrophyPage: FC = () => {
   return (
     <>
+      <Header />
       <main>
-        <Header />
         <div>
           <TrofeyCardList />
         </div>
