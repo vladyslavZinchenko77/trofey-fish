@@ -27,7 +27,7 @@ const LakeCard: FC<LakeCardProps> = ({
         onMouseEnter={() => setOnMouse(false)}
         onMouseLeave={() => setOnMouse(true)}
         style={{ backgroundImage: `url(${coverImg})` }}
-        className={`mt-[10px] bg-cover bg-center bg-no-repeat cursor-pointer relative rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%] w-[400px] h-[350px] hover:rounded-br-[0] hover:rounded-tr-[50%] transition-[2000ms]`}
+        className={`mt-[10px] bg-cover bg-center bg-no-repeat cursor-pointer relative rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%] w-[400px] h-[350px] duration-[500ms] hover:rounded-br-[0] hover:rounded-tr-[50%]`}
       >
         <div
           className={

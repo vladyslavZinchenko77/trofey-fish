@@ -17,11 +17,11 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
       onMouseLeave={() => setOnMouse(true)}
       className={
         onMouse
-          ? 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%]  w-[400px] h-[400px] flex flex-col justify-between transition-[2000ms] hover:rounded-tr-[0]'
-          : 'p-4 border bg-customGreen rounded-tl-[50%]  rounded-bl-[50%] rounded-tr-[50%]  w-[400px] h-[400px] flex flex-col justify-between hover:rounded-br-[0]'
+          ? 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms]'
+          : 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-tr-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms]'
       }
     >
-      <div className=" mt-[12px] flex justify-center">
+      <div className="mt-[12px] flex justify-center">
         <div className="flex items-center mb-4 cursor-pointer">
           <Avatar />
           <p className="ml-2">{fishermanName}</p>
@@ -31,7 +31,7 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
         Трофей {fishType} вагою {fishWeight} кг
       </p>
       <div className="flex justify-center">
-        <div className="w-[250px] h-[150px] ">
+        <div className="w-[250px] h-[150px]">
           <img
             src={fishPhoto}
             alt={fishType}
