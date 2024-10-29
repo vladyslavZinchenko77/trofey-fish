@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import LakeCard from '../LakeCard';
+import CardRecom from '../CardRecom';
 import { lakes } from './data';
 
 const LakeCardList: FC = () => {
@@ -8,7 +8,7 @@ const LakeCardList: FC = () => {
       <h2 className="text-center semi-bold">Озера для Риболовлі Київщини:</h2>
       <div className="mt-[24px] grid grid-cols-3 gap-[8px]">
         {lakes.map((lake) => (
-          <LakeCard
+          <CardRecom
             key={lake.id}
             id={lake.id}
             coverImg={lake.coverImg}

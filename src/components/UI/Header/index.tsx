@@ -31,7 +31,7 @@ const Header: FC = () => {
     <header className="px-[40px] py-[18px]">
       <nav className="flex justify-between items-center">
         <Logo />
-        <div className="flex">
+        <div className="flex sm:hidden md:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
               <div className="flex flex-col items-center p-[12px] group hover:text-[#0275B1] transition-colors duration-300">
