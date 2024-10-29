@@ -14,11 +14,22 @@ export interface TrofeyCardProps {
 
 export interface LakeCardProps {
   id: number;
-  lakeName: string;
+  title: string;
   instagramLink: string;
   facebookLink: string;
   youtubeLink: string;
   websiteLink: string;
   coverImg: string;
   lakeAddress: string;
+}
+
+export interface BloggerCardProps {
+  id: number;
+  title: string;
+  instagramLink: string;
+  facebookLink: string;
+  youtubeLink: string;
+  websiteLink: string;
+  coverImg: string;
+  description: string;
 }

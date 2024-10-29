@@ -13,6 +13,13 @@ const config: Config = {
         foreground: 'var(--foreground)',
         customGreen: '#32b5a4',
       },
+      screens: {
+        sm: '280px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
