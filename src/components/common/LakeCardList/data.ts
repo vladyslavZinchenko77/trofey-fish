@@ -3,7 +3,7 @@ import { LakeCardProps } from '@/types/interfaces';
 export const lakes: LakeCardProps[] = [
   {
     id: 1,
-    lakeName: 'Озеро "Трофейне"',
+    title: 'Озеро "Трофейне"',
     instagramLink: '',
     facebookLink: 'https://www.facebook.com/profile.php?id=100001293125330',
     youtubeLink: '',
@@ -14,7 +14,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 2,
-    lakeName: 'Озеро "Михайлина"',
+    title: 'Озеро "Михайлина"',
     instagramLink: 'https://www.instagram.com/mihailyna/',
     facebookLink: 'https://www.facebook.com/mihaylyna/',
     youtubeLink: '',
@@ -25,7 +25,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 3,
-    lakeName: 'Озеро "Уляники"',
+    title: 'Озеро "Уляники"',
     instagramLink: 'https://www.instagram.com/mihailyna/',
     facebookLink: 'https://www.facebook.com/mihaylyna/',
     youtubeLink: '',
@@ -35,7 +35,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 4,
-    lakeName: 'Озеро "Забір\'я"',
+    title: 'Озеро "Забір\'я"',
     instagramLink: 'https://www.instagram.com/fish_park_zabirya_riba_chok/',
     facebookLink: 'https://www.facebook.com/zabiryafishpark/',
     youtubeLink: '',
@@ -45,7 +45,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 5,
-    lakeName: 'Рибальський клуб "Солтанівка"',
+    title: 'Рибальський клуб "Солтанівка"',
     instagramLink: '',
     facebookLink: 'https://www.facebook.com/soltanovka',
     youtubeLink: '',
@@ -55,7 +55,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 6,
-    lakeName: 'Рибальський клуб "Солтанівка"',
+    title: 'Рибальський клуб "Солтанівка"',
     instagramLink:
       'https://www.instagram.com/vovkove_ozero?igsh=MWFpdGU5a2MzNTdwZg==',
     facebookLink: 'https://www.facebook.com/vovkovelake',
@@ -67,7 +67,7 @@ export const lakes: LakeCardProps[] = [
   },
   {
     id: 7,
-    lakeName: 'Озеро "КарТар"',
+    title: 'Озеро "КарТар"',
     instagramLink: 'https://www.instagram.com/ozero_kartar',
     facebookLink: 'https://www.facebook.com/OzeroKarTar/',
     youtubeLink:
