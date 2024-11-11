@@ -14,7 +14,7 @@ const LakeCardList: FC = () => {
             coverImg={lake.coverImg}
             facebookLink={lake.facebookLink}
             instagramLink={lake.instagramLink}
-            lakeName={lake.lakeName}
+            title={lake.title}
             websiteLink={lake.websiteLink}
             youtubeLink={lake.youtubeLink}
             lakeAddress={lake.lakeAddress}
