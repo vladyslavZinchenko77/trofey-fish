@@ -20,7 +20,7 @@ const CardRecom: FC<LakeCardProps> = ({
 
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col w-[400px] relative sm:w-[330px] md:w-[400px]">
+      <div className="flex flex-col w-[400px] relative sm:w-[330px] md:w-[380px] md:w-[380px]">
         <div className="flex justify-center">
           <h2>{title}</h2>
         </div>
