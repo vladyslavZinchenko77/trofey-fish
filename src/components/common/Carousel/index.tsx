@@ -15,7 +15,6 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ cards }) => {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -23,7 +22,6 @@ const Carousel: React.FC<CarouselProps> = ({ cards }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-   
   };
 
   return (
@@ -44,5 +42,3 @@ const Carousel: React.FC<CarouselProps> = ({ cards }) => {
 };
 
 export default Carousel;
-
-

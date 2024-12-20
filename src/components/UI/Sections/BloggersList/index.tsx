@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import CardRecom from '../CardRecom';
+import CardRecom from '@/components/common/CardRecom';
 import { bloggers } from './data';
 
 const BloggersList: FC = () => {

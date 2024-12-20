@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import LakeCardList from '@/components/common/LakeCardList';
+import LakeCardList from '@/components/UI/Sections/LakeCardList';
 import Header from '@/components/UI/Header';
 import Footer from '@/components/UI/Footer';
 
