@@ -1,11 +1,12 @@
 import React, { FC } from 'react';
 import CardRecom from '@/components/common/CardRecom';
 import { bloggers } from './data';
+import SectionTitle from '@/components/common/SectionTitle';
 
 const BloggersList: FC = () => {
   return (
     <div className="mt-[24px] mx-[40px] sm:mx-0 md:mx-[40px]">
-      <h2 className="text-center semi-bold">Блогери про рибалку:</h2>
+      <SectionTitle>Блогери про рибалку:</SectionTitle>
       <div className="mt-[24px] grid grid-cols-3 gap-[8px] sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
         {bloggers.map((blogger) => (
           <CardRecom
