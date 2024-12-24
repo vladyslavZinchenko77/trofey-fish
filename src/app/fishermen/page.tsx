@@ -7,8 +7,8 @@ const FishermenPage: FC = () => {
   return (
     <>
       <Header />
-      <main className="min-h-screen flex items-center justify-center">
-        <NotFound />
+      <main className="flex items-center justify-center">
+        <NotFound type='inProgress' />
       </main>
       <Footer />
     </>

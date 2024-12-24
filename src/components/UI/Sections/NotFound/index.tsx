@@ -9,8 +9,8 @@ const NotFound: FC<NotFoundProps> = ({ type = 'notFound' }) => {
   return (
     <div className="flex flex-col items-center justify-center text-2xl text-center font-bold">
       <Image 
-        width={400} 
-        height={400} 
+        width={300} 
+        height={300} 
         alt='fisherman' 
         src='/png/fisherman.png'
       />
