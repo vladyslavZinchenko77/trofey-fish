@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Header from '@/components/UI/Header';
-import TrofeyCardList from '@/components/common/TrofeyCardList';
+import TrofeyCardList from '@/components/UI/Sections/TrofeyCardList';
 import Footer from '@/components/UI/Footer';
 
 const TrophyPage: FC = () => {

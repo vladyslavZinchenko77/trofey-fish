@@ -1,6 +1,6 @@
 'use client';
 import React, { FC } from 'react';
-import TrofeyCardList from '@/components/common/TrofeyCardList';
+import TrofeyCardList from '@/components/UI/Sections/TrofeyCardList';
 import Header from '@/components/UI/Header';
 import Footer from '@/components/UI/Footer';
 

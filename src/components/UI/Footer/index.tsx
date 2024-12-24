@@ -8,7 +8,7 @@ const Footer: FC = () => {
     <footer className="relative mt-6">
       <Image
         className="w-full h-auto"
-        src={'/svg/Lake-background.svg'}
+        src={'/png/Lake-bg.png'}
         width={1805}
         height={692}
         alt="fishmen on the lake"

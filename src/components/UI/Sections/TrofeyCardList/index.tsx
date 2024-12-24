@@ -1,7 +1,8 @@
 'use client';
 import React, { FC, useState, useEffect } from 'react';
-import TrofeyCard from '../TrofeyCard';
+import TrofeyCard from '../../../common/TrofeyCard';
 import { TrofeyCardProps } from '@/types/interfaces';
+import SectionTitle from '@/components/common/SectionTitle';
 
 const TrofeyCardList: FC = () => {
   const [posts, setPosts] = useState<TrofeyCardProps[]>([]);
@@ -26,7 +27,7 @@ const TrofeyCardList: FC = () => {
 
   return (
     <div className="mt-[24px] ml-[40px] mr-[40px]">
-      <h2>Trophies of our users:</h2>
+      <SectionTitle>Трофеї:</SectionTitle>
       <div className="m-[24px] grid grid-cols-3 gap-[24px] sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 sm:justify-items-center">
         {posts.map((post) => (
           <TrofeyCard

@@ -15,12 +15,12 @@ import FishIcon from '@/components/common/IconComponents/FishIcon';
 const navItems = [
   { href: paths.home.trophy, icon: TrophyIcon, text: 'Трофеї' },
   { href: paths.home.fishermen, icon: FishermenIcon, text: 'Рибаки' },
-  { href: paths.home.fishingBloggers, icon: BlogIcon, text: 'Блогери Рибаки' },
+  { href: paths.home.fishingBloggers, icon: BlogIcon, text: 'Блогери' },
   { href: paths.home.typesOfFish, icon: FishIcon, text: 'Види Риб' },
   {
     href: paths.home.fishingLocations,
     icon: FishingLocation,
-    text: 'Локації для рибалки',
+    text: 'Локації',
   },
 ];
 
