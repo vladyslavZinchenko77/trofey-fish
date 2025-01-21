@@ -1,6 +1,9 @@
 import { FC, useState } from 'react';
 import { TrofeyCardProps } from '@/types/interfaces';
 import Avatar from '../Avatar';
+import LikeIcon from '../IconComponents/LikeIcon';
+
+
 
 const TrofeyCard: FC<TrofeyCardProps> = ({
   fishermanName,
@@ -40,13 +43,8 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <button
-          type="button"
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg"
-        >
-          Like
-        </button>
-        <p className="text-lg font-medium">likes: {likes}</p>
+        <LikeIcon  onClick={() => {console.log('click')}}/>
+        <p className="text-lg font-medium">{likes}</p>
       </div>
     </div>
   );
