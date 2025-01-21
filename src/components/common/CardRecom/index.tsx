@@ -22,7 +22,7 @@ const CardRecom: FC<LakeCardProps> = ({
     <div className="flex justify-center">
       <div className="flex flex-col w-[400px] relative sm:w-[330px] md:w-[380px] md:w-[380px]">
         <div className="flex justify-center">
-          <h2>{title}</h2>
+          <h2 className="text-center text-lg font-semibold text-gray-800 sm:text-lg md:text-xl">{title}</h2>
         </div>
         <div
           onMouseEnter={() => setOnMouse(false)}
