@@ -3,8 +3,6 @@ import { TrofeyCardProps } from '@/types/interfaces';
 import Avatar from '../Avatar';
 import LikeIcon from '../IconComponents/LikeIcon';
 
-
-
 const TrofeyCard: FC<TrofeyCardProps> = ({
   fishermanName,
   fishType,
@@ -43,7 +41,11 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <LikeIcon  onClick={() => {console.log('click')}}/>
+        <LikeIcon
+          onClick={() => {
+            console.log('click');
+          }}
+        />
         <p className="text-lg font-medium">{likes}</p>
       </div>
     </div>
