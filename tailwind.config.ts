@@ -20,8 +20,12 @@ const config: Config = {
         xl: '1280px',
         '2xl': '1536px',
       },
+      fontFamily: {
+        marck: 'var(--font-marck-script)',
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

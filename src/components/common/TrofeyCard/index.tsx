@@ -3,8 +3,6 @@ import { TrofeyCardProps } from '@/types/interfaces';
 import Avatar from '../Avatar';
 import LikeIcon from '../IconComponents/LikeIcon';
 
-
-
 const TrofeyCard: FC<TrofeyCardProps> = ({
   fishermanName,
   fishType,
@@ -20,8 +18,8 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
       onMouseLeave={() => setOnMouse(true)}
       className={
         onMouse
-          ? 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms]'
-          : 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-tr-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms]'
+          ? 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-br-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms] cursor-pointer'
+          : 'p-4 border bg-customGreen rounded-tl-[50%] rounded-bl-[50%] rounded-tr-[50%] w-[400px] h-[400px] flex flex-col justify-between duration-[500ms] cursor-pointer'
       }
     >
       <div className="mt-[12px] flex justify-center">
@@ -30,16 +28,16 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
           <p className="ml-2">{fishermanName}</p>
         </div>
       </div>
-      <p className="text-lg text-center font-semibold mb-4">
-        Трофей {fishType} вагою {fishWeight} кг
-      </p>
       <div className="flex justify-center">
-        <div className="w-[250px] h-[150px]">
+        <div className="relative w-[250px] h-[200px] bg-white p-2 shadow-lg rounded-md flex flex-col items-center">
           <img
             src={fishPhoto}
             alt={fishType}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-[80%] object-cover rounded-md"
           />
+      <div className="w-full text-center text-xl text-black-500 mt-1 font-marck">
+ {fishType} вагою {fishWeight} кг
+</div>
         </div>
       </div>
       <div className="flex justify-center items-center">
@@ -51,3 +49,6 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
 };
 
 export default TrofeyCard;
+
+
+
