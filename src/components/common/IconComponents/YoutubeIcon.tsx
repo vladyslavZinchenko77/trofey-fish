@@ -2,14 +2,16 @@
 import { FC, useState } from 'react';
 
 interface IconProps {
-  size?: number;
+  height?: number;
+  width?: number;
   className?: string;
   color?: string;
   hoverColor?: string;
 }
 
 const CustomIcon: FC<IconProps> = ({
-  size = 24,
+  width = 24,
+  height = 24,
   className = '',
   color = '#FFFFFF',
   hoverColor = 'blue',
@@ -19,8 +21,8 @@ const CustomIcon: FC<IconProps> = ({
   return (
     <svg
       fill={isHovered ? hoverColor : color}
-      width={size}
-      height={size}
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       className={className}

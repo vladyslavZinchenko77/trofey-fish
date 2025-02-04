@@ -1,16 +1,19 @@
 'use client';
 
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 
 interface IconProps {
   size?: number;
   className?: string;
   color?: string;
   hoverColor?: string;
+  height?: number;
+  width?: number;
 }
 
-const FacebookIcon: React.FC<IconProps> = ({
-  size = 24,
+const FacebookIcon: FC<IconProps> = ({
+  width = 24,
+  height = 24,
   className = '',
   color = '#0F0F0F',
   hoverColor = 'blue',
@@ -19,8 +22,8 @@ const FacebookIcon: React.FC<IconProps> = ({
 
   return (
     <svg
-      width={size}
-      height={size}
+      width={width}
+      height={height}
       viewBox="-143 145 512 512"
       xmlns="http://www.w3.org/2000/svg"
       className={`stroke-current ${className}`}

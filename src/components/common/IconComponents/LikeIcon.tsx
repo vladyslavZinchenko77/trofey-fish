@@ -1,14 +1,16 @@
 import React from 'react';
 
 interface LikeIconProps {
-  size?: number;
+  height?: number;
+  width?: number;
   color?: string;
   isLiked?: boolean;
   onClick: () => void;
 }
 
 const LikeIcon: React.FC<LikeIconProps> = ({
-  size = 24,
+  width = 24,
+  height = 24,
   color = '#1C274C',
   isLiked = false,
   onClick,
@@ -16,8 +18,8 @@ const LikeIcon: React.FC<LikeIconProps> = ({
   if (isLiked) {
     return (
       <svg
-        width={size}
-        height={size}
+        width={width}
+        height={height}
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +43,8 @@ const LikeIcon: React.FC<LikeIconProps> = ({
 
   return (
     <svg
-      width={size}
-      height={size}
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

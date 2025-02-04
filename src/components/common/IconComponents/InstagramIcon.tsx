@@ -2,14 +2,16 @@
 import { FC, useState } from 'react';
 
 interface IconProps {
-  size?: number;
+  height?: number;
+  width?: number;
   className?: string;
   color?: string;
   hoverColor?: string;
 }
 
 const InstagramIcon: FC<IconProps> = ({
-  size = 24,
+  height = 24,
+  width = 24,
   className = '',
   color = '#0F0F0F',
   hoverColor = 'purple',
@@ -18,8 +20,8 @@ const InstagramIcon: FC<IconProps> = ({
 
   return (
     <svg
-      width={size}
-      height={size}
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
