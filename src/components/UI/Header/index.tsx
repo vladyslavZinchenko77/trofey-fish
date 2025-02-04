@@ -34,11 +34,30 @@ const Header: FC = () => {
         <div className="flex sm:hidden md:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
-              <div className="flex flex-col items-center p-[12px] group hover:text-[#0275B1] transition-colors duration-300">
-                <item.icon className="text-[#181818] group-hover:text-[#0275B1] transition-colors duration-300" />
-                <p className="text-[#181818] group-hover:text-[#0275B1] transition-colors duration-300 uppercase">
+              <div
+                className={`flex flex-col items-center p-[12px] group hover:text-[#0275B1] transition-colors duration-300 relative ${
+                  pathname === item.href ? 'text-[#0275B1]' : 'text-[#181818]'
+                }`}
+              >
+                <item.icon
+                  className={`transition-colors duration-300 ${
+                    pathname === item.href
+                      ? 'text-[#0275B1]'
+                      : 'text-[#181818]'
+                  }`}
+                />
+                <p
+                  className={`uppercase transition-colors duration-300 ${
+                    pathname === item.href ? 'text-[#0275B1]' : 'text-[#181818]'
+                  }`}
+                >
                   {item.text}
                 </p>
+                <div
+                  className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[2px] w-0 bg-[#0275B1] group-hover:w-full transition-all duration-300 ${
+                    pathname === item.href ? 'w-full' : ''
+                  }`}
+                ></div>
               </div>
             </Link>
           ))}
