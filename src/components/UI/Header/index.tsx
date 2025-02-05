@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from '@/components/common/Logo';
-import Avatar from '@/components/common/Avatar';
+// import Avatar from '@/components/common/Avatar';
 
 import { paths } from '@/routes/path';
 import TrophyIcon from '@/components/common/IconComponents/TrophyIcon';
@@ -20,7 +20,7 @@ const navItems = [
   {
     href: paths.home.fishingLocations,
     icon: FishingLocation,
-    text: 'Локації',
+    text: 'Озера',
   },
 ];
 
@@ -34,21 +34,55 @@ const Header: FC = () => {
         <div className="flex sm:hidden md:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
-              <div className="flex flex-col items-center p-[12px] group hover:text-[#0275B1] transition-colors duration-300">
-                <item.icon className="text-[#181818] group-hover:text-[#0275B1] transition-colors duration-300" />
-                <p className="text-[#181818] group-hover:text-[#0275B1] transition-colors duration-300 uppercase">
+              <div
+                className={`flex flex-col items-center p-[12px] group hover:text-[#0275B1] transition-colors duration-300 relative ${
+                  pathname === item.href ? 'text-[#0275B1]' : 'text-[#181818]'
+                }`}
+              >
+                <item.icon
+                  className={`transition-colors duration-300 ${
+                    pathname === item.href
+                      ? 'text-[#0275B1]'
+                      : 'text-[#181818]'
+                  }`}
+                />
+                <p
+                  className={`uppercase transition-colors duration-300 ${
+                    pathname === item.href ? 'text-[#0275B1]' : 'text-[#181818]'
+                  }`}
+                >
                   {item.text}
                 </p>
+                <div
+                  className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[2px] w-0 bg-[#0275B1] group-hover:w-full transition-all duration-300 ${
+                    pathname === item.href ? 'w-full' : ''
+                  }`}
+                ></div>
               </div>
             </Link>
           ))}
         </div>
-        <Link href={'/'}>
+
+  
+        <div className="flex items-center space-x-4">
+          <Link href="/login">
+            <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
+              Увійти
+            </button>
+          </Link>
+          <Link href="/register">
+            <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
+              Зареєструватись
+            </button>
+          </Link>
+        </div>
+
+        {/* <Link href={'/'}>
           <div className="flex items-center">
             <Avatar />
             <p className="ml-[8px]">D. Kargaev</p>
           </div>
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );

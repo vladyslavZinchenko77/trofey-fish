@@ -1,5 +1,3 @@
-
-
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Marck_Script } from 'next/font/google';

@@ -35,13 +35,17 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
             alt={fishType}
             className="w-full h-[80%] object-cover rounded-md"
           />
-      <div className="w-full text-center text-xl text-black-500 mt-1 font-marck">
- {fishType} вагою {fishWeight} кг
-</div>
+          <div className="w-full text-center text-xl text-black-500 mt-1 font-marck">
+            {fishType} вагою {fishWeight} кг
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <LikeIcon  onClick={() => {console.log('click')}}/>
+        <LikeIcon
+          onClick={() => {
+            console.log('click');
+          }}
+        />
         <p className="text-lg font-medium">{likes}</p>
       </div>
     </div>
@@ -49,6 +53,3 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
 };
 
 export default TrofeyCard;
-
-
-
