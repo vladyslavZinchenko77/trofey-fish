@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from '@/components/common/Logo';
-import Avatar from '@/components/common/Avatar';
+// import Avatar from '@/components/common/Avatar';
 
 import { paths } from '@/routes/path';
 import TrophyIcon from '@/components/common/IconComponents/TrophyIcon';
@@ -20,7 +20,7 @@ const navItems = [
   {
     href: paths.home.fishingLocations,
     icon: FishingLocation,
-    text: 'Локації',
+    text: 'Озера',
   },
 ];
 
@@ -62,12 +62,27 @@ const Header: FC = () => {
             </Link>
           ))}
         </div>
-        <Link href={'/'}>
+
+  
+        <div className="flex items-center space-x-4">
+          <Link href="/login">
+            <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
+              Увійти
+            </button>
+          </Link>
+          <Link href="/register">
+            <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
+              Зареєструватись
+            </button>
+          </Link>
+        </div>
+
+        {/* <Link href={'/'}>
           <div className="flex items-center">
             <Avatar />
             <p className="ml-[8px]">D. Kargaev</p>
           </div>
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );
