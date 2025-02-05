@@ -41,9 +41,7 @@ const Header: FC = () => {
               >
                 <item.icon
                   className={`transition-colors duration-300 ${
-                    pathname === item.href
-                      ? 'text-[#0275B1]'
-                      : 'text-[#181818]'
+                    pathname === item.href ? 'text-[#0275B1]' : 'text-[#181818]'
                   }`}
                 />
                 <p
@@ -63,7 +61,6 @@ const Header: FC = () => {
           ))}
         </div>
 
-  
         <div className="flex items-center space-x-4">
           <Link href="/login">
             <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
