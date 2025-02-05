@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 import { TrofeyCardProps } from '@/types/interfaces';
+import Image from 'next/image';
 import Avatar from '../Avatar';
 import LikeIcon from '../IconComponents/LikeIcon';
 
@@ -30,6 +31,7 @@ const TrofeyCard: FC<TrofeyCardProps> = ({
       </div>
       <div className="flex justify-center">
         <div className="relative w-[250px] h-[200px] bg-white p-2 shadow-lg rounded-md flex flex-col items-center">
+          <Image src='/svg/pin.svg' width={24} height={24} alt='pin' className='absolute top-[-15px] left-[3px]'/>
           <img
             src={fishPhoto}
             alt={fishType}
