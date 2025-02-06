@@ -1,6 +1,3 @@
-
-
-
 'use client';
 
 import { FC, useEffect, useRef } from 'react';
@@ -75,7 +72,10 @@ const Footer: FC = () => {
       </div>
 
       {/* Друга хвиля */}
-      <div ref={secondWavesRef} className="absolute bottom-0 left-0 w-[2000px] z-0">
+      <div
+        ref={secondWavesRef}
+        className="absolute bottom-0 left-0 w-[2000px] z-0"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 2000 200"
@@ -101,18 +101,23 @@ const Footer: FC = () => {
       ))}
 
       {/* Рибки */}
-      {[...Array(5)].map((_, index) => (  // Додаємо 5 рибок
-        <div
-          key={index}
-          className="fish absolute text-3xl"
-          style={{
-            left: `${Math.random() * 100}%`,
-            bottom: `${Math.random() * 70}px`, // Обмежуємо рибок по вертикалі
-          }}
-        >
-          🐟
-        </div>
-      ))}
+      {[...Array(5)].map(
+        (
+          _,
+          index // Додаємо 5 рибок
+        ) => (
+          <div
+            key={index}
+            className="fish absolute text-3xl"
+            style={{
+              left: `${Math.random() * 100}%`,
+              bottom: `${Math.random() * 70}px`, // Обмежуємо рибок по вертикалі
+            }}
+          >
+            🐟
+          </div>
+        )
+      )}
 
       {/* Основний контент футера */}
       <div className="flex flex-col items-center m-3 absolute left-0 right-0 bottom-0 justify-between space-y-3 md:space-y-0 md:flex-row md:items-center md:justify-between z-10">

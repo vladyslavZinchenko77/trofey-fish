@@ -10,7 +10,7 @@ const TrofeyCardList: FC = () => {
   useEffect(() => {
     const getPosts = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/posts');
+        const response = await fetch('/api/posts');
         const data = await response.json();
         setPosts(data);
       } catch (error) {
