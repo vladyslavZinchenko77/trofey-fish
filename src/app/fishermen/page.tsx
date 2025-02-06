@@ -10,6 +10,11 @@ const FishermenPage: FC = () => {
       <Header />
       <main className="flex items-center justify-center">
         <NotFound type="inProgress" />
+
+
+
+
+
       </main>
       <Footer />
       </div>
