@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import CardRecom from '@/components/common/CardRecom';
-import { lakes } from './data';
+import { lakes } from '@/data/lakes';
 import SectionTitle from '@/components/common/SectionTitle';
 
 const LakeCardList: FC = () => {
