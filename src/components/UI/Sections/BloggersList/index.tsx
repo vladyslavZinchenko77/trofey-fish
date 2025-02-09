@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import CardRecom from '@/components/common/CardRecom';
-import { bloggers } from './data';
+import { bloggers } from '@/data/bloggers';
 import SectionTitle from '@/components/common/SectionTitle';
 
 const BloggersList: FC = () => {

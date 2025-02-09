@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from '@/components/common/Carousel';
-import { fishTypes } from './data';
+import { fishTypes } from '@/data/fish';
 import SectionTitle from '@/components/common/SectionTitle';
 
 const TypesOfFishSection = () => {
