@@ -62,12 +62,12 @@ const Header: FC = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Link href="/login">
+          <Link href="/auth/login">
             <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
               Увійти
             </button>
           </Link>
-          <Link href="/register">
+          <Link href="/auth/sign-up">
             <button className="px-4 py-2 border border-[#0275B1] text-[#0275B1] rounded-lg hover:bg-[#0275B1] hover:text-white transition-all duration-300">
               Зареєструватись
             </button>
