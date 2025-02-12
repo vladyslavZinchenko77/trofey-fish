@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Verify = () => {
-  return (
-    <div>
-      verify
-    </div>
-  )
-}
+  return <div>verify</div>;
+};
 
-export default Verify
+export default Verify;
