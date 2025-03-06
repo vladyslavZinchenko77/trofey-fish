@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 const FishermenHome: FC = () => {
   return (
     <section
-      className="relative h-[500px] flex flex-col justify-center items-center text-white text-center px-6"
+      className="relative h-[800px] flex flex-col justify-center items-center text-white text-center px-6"
       style={{
-        backgroundImage: "url('/webp/fishermen.webp')",
+        backgroundImage: "url('/img/fishermen-home.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

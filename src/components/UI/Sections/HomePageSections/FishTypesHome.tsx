@@ -5,7 +5,7 @@ const FishTypesHome = () => {
     <section
       className="relative h-[500px] flex flex-col justify-center items-center text-white text-center px-6"
       style={{
-        backgroundImage: "url('/webp/fishermen.webp')",
+        backgroundImage: "url('/webp/fish-home.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
