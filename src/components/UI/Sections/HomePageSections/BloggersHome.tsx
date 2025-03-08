@@ -5,7 +5,7 @@ const BloggersHome = () => {
     <section
       className="relative h-[500px] flex flex-col justify-center items-center text-white text-center px-6"
       style={{
-        backgroundImage: "url('/webp/')",
+        backgroundImage: "url('/webp/bloggers-home.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
