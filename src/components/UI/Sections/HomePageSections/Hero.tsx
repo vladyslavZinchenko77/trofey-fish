@@ -22,8 +22,8 @@ const Hero: FC = () => {
           водойми та обговорюють кращі місця для риболовлі.
         </h4>
         <div className="mt-4 sm:mt-5 md:mt-6 flex flex-col sm:flex-col md:flex-row sm:gap-3 md:gap-4 gap-3 justify-center items-center">
-          <ButtonWithFishAnimation text="Приєднатися" />
           <ButtonWithFishAnimation text="Переглянути трофеї" />
+          <ButtonWithFishAnimation text="Приєднатися" />
         </div>
       </div>
     </section>

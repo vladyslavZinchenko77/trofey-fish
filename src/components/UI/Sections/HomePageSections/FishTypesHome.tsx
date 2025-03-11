@@ -1,4 +1,5 @@
 import React from 'react';
+import ButtonWithFishAnimation from '@/components/common/ButtonWithFishAnimation';
 
 const FishTypesHome = () => {
   return (
@@ -17,9 +18,9 @@ const FishTypesHome = () => {
           Не знаєш, що можна зловити? Вивчай види риб, їхні особливості та
           найкращі методи лову.
         </h2>
-        <button className="bg-gray-700 mt-4 sm:mt-6 hover:bg-gray-800 px-6 py-3 rounded-lg transition text-lg sm:text-xl">
-          Переглянути
-        </button>
+        <div className="mt-6 flex justify-center">
+          <ButtonWithFishAnimation text="Переглянути" />
+        </div>
       </div>
     </section>
   );

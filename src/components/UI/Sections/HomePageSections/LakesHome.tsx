@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import ButtonWithFishAnimation from '@/components/common/ButtonWithFishAnimation';
 
 const LakesHome: FC = () => {
   return (
@@ -12,13 +13,13 @@ const LakesHome: FC = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      <div className="relative z-10 max-w-lg sm:max-w-xl md:max-w-2xl">
+      <div className="relative z-10 max-w-lg sm:max-w-xl md:max-w-2xl flex flex-col items-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
           Відкривай нові озера
         </h2>
-        <button className="bg-gray-700 mt-4 sm:mt-5 md:mt-6 hover:bg-gray-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition">
-          Переглянути
-        </button>
+        <div className="mt-4 sm:mt-6">
+          <ButtonWithFishAnimation text="Переглянути" />
+        </div>
       </div>
     </section>
   );
