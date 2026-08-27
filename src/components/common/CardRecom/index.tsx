@@ -7,7 +7,6 @@ import YoutubeIcon from '../IconComponents/YoutubeIcon';
 import { LakeCardProps } from '@/types/interfaces';
 
 const CardRecom: FC<LakeCardProps> = ({
-  id,
   title,
   instagramLink,
   youtubeLink,

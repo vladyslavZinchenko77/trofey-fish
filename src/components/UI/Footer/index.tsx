@@ -42,7 +42,7 @@ const Footer: FC = () => {
 
     // Анімація рибок
     const fish = document.querySelectorAll('.fish');
-    fish.forEach((f, index) => {
+    fish.forEach((f) => {
       gsap.to(f, {
         x: `${Math.random() * 100 - 50}%`, // Плавають випадково вліво/вправо
         y: `${Math.random() * 40 - 20}px`, // Рухаються вгору/вниз

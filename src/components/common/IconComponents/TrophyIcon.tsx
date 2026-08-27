@@ -13,7 +13,13 @@ const TrophyIcon: FC<IconProps> = ({
   className = '',
 }) => {
   return (
-    <Image src={'/svg/trophy.svg'} width={width} height={height} alt="lake" />
+    <Image
+      className={className}
+      src={'/svg/trophy.svg'}
+      width={width}
+      height={height}
+      alt="lake"
+    />
   );
 };
 
