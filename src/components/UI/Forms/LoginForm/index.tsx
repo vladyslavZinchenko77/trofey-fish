@@ -32,7 +32,7 @@ const LoginForm = () => {
           <div className="flex items-center mt-4">
             <input type="checkbox" id="remember" />
             <label htmlFor="remember" className="ml-2">
-              Запам'ятати мене
+              Запам&apos;ятати мене
             </label>
           </div>
         </div>

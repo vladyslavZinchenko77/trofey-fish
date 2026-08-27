@@ -1,4 +1,4 @@
-export let posts = [
+export const posts = [
   {
     id: 1,
     fishingType: 'Спиннинг',
